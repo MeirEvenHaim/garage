@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header>
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button  onclick="window.location.href='Gallery.html'">Gallery</button>
+        <button>Special Orders</button>
+        <button>About Us</button>
+        <button id="logout" >Log Out</button>
+    </header>
+
+    <nav>
+        <input type="text" id="search" placeholder="Search items...">
+    </nav>
+
+    <div id="customerList">
+        what is your name? <input type="text" id="name">
+        what is you family name?<input type="text" id="surname">
+        what is your age? <input type="number" id="age">
+        what is your residual adress? <input type="text" id="address">
+        what is your date of birth? <input type="date" id="dob">
+        credit card number(optional) <input type="text" id="creditCard">
+
+        <button id="create_customer" onclick="create_customer()">create new customer</button>
+        <button id="Load_customer" onclick="load_customer()">load customer</button>
+        <button id="Delet_customer" onclick="delet_customer()">delet customer</button>
+        <button id="save_customer" onclick="save_customer()">save customer</button>
+    </div>
+    <div id="car Information">
+        car firm<input type="text" id="company">
+        care year of creation<input type="date" id="released">
+        car model<input type="text" id="model">
+
+        <button id="create_car" onclick="create_car()">new car</button>
+        <button id="Load_car" onclick="loadCar()">load new car</button>
+        <button id="Delet_car" onclick="deletCar()">delet car</button>
+        <button id="save_car" onclick="saveCars()">save new car</button>
+    </div>
+
+    <footer>
+        <button onclick="window.location.href='cars.html'">Go to Cars Page</button>
+        <button onclick="window.location.href='customer.html'">Go to Customers Page</button>
+        <button id="contactUs">Contact Us</button>
+    </footer>
+
+    <script src="garage.js"></script>
+</body>
+
+</html>

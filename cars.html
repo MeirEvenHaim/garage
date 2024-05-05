@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header>
+    <button onclick="window.location.href='index.html'">Home</button>
+    <button>Gallery</button>
+    <button>Special Orders</button>
+    <button>About Us</button>
+    <button id="logout">Log Out</button>
+</header>
+<nav>
+    <input type="text" id="search" placeholder="Search items...">
+</nav>
+
+<body>
+    <div id="carList"></div>
+    <button id="create_car" onclick="create_car()">new car</button>
+    <button id="Load_car" onclick="loadCar()">load new car</button>
+    <button id="save_car" onclick="saveCars()">save new car</button>
+    <button id="Delet_car" onclick="deleteCar()">delet car</button>
+    <footer>
+        <button onclick="window.location.href='customer.html'">Go to Customers Page</button>
+        <button id="contactUs">Contact Us</button>
+    </footer>
+
+    <script src="garage.js"></script>
+    <script>
+        window.onload = function () {
+            displayCars();
+        }
+    </script>
+
+</body>
+
+
+</html>
